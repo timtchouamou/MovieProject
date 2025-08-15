@@ -33,21 +33,17 @@ async function searchOMDb() {
         if (data.Response === "True") {
           data.Search.forEach(item => {
             resultsDiv.innerHTML += `
-              <div class="movie-card" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                <div>
-                  <h3 style="font-size: 23px;">Search results for:"${item.Title}"</h3>
-                  <!-- Price slider -->
-  // <label for="priceRange" style = "font-size: 23px">Price:
-  // <span id="priceValue">$100,0</span>
-  // <input type="range" id="priceRange" min="0" max="1000" step="5" value="0" oninput="updatePriceLabel()">
-  // </label>
-  </div>
-                  <p style="color: rgba(11, 11, 12, 1); font-size: 23px; font-weight: bold;">${item.Year} — ${item.Type}</p>
+             <div class="container">
+            <div class="row">
+              <div class="main__description">
+                 <h3 id="results" style="font-size: 30px;">Search results for: "${item.Title}"</h3>
+              </div>
+               <div class="movie-card">
+                  <p class="YearMovie">${item.Year} — ${item.Type}</p>
+                <img src="${item.Poster !== "N/A" ? item.Poster: 'https://via.placeholder.com/80'}" alt="Poster" class="imageMovie">
                 </div>
-                <img style="width: 10%; height: 10%;" src="${item.Poster !== "N/A" ? item.Poster: 'https://via.placeholder.com/80'}" alt="Poster">
-                </div>
-              </div>  
+            </div>
+          </div>  
             `;
           });
 
