@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cars2</title>
+  <title>Movie</title>
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -72,32 +72,28 @@
      
         </nav>
 
-    <main>
-       <label for="priceRange" style="font-size: 30px; position: absolute; display: flex; left: 950px; bottom: 880px;">Price:
-  <span id="priceValue">$0</span>
-  <input type="range" id="priceRange" min="0" max="1000" step="5" value="0" oninput="updatePriceLabel()">
-  </label>
-
-       <!-- results -->
- 
-   <div class="movie-card" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 80px;">
-                <div  >
-                  <h3 id="results" style="font-size: 30px;">Search results for:</h3>
-                  <!-- Price slider -->
-<!--   <label for="priceRange">Price:
-  <span id="priceValue">$0</span>
-  <input type="range" id="priceRange" min="0" max="1000" step="5" value="0" oninput="updatePriceLabel()">
-  </label> -->
-  </div>
-                  <p style="color: rgba(11, 11, 12, 1); font-size: 30px; font-weight: bold;"></p>
+  <main>
+          <label for="priceRange"  class="princeRange">Price:
+                  <span id="priceValue">$0</span>
+                <input type="range" id="priceRange" min="0" max="1000" step="5" value="0" oninput="updatePriceLabel()">
+              </label>
+          <div class="container">
+            <div class="row">
+              <div class="main__description">
+                 <h3 id="results" style="font-size: 30px;">Search results for:</h3>
+              </div>
+               <div class="movie-card">
+                  <p class="YearMovie"></p>
+               <div class="modal__overlay modal__overlay--loading" id="spinner">
+                    <i class="fas fa-spinner"></i>
                 </div>
-                <!-- <div class="modal__overlay modal__overlay--loading" style="position: absolute; display: flex; justify-content: center; align-items: center; margin-top: 70px; background-color: white; font-size: 60px; left: 50%; bottom: 500px;">
-                    <i class="fas fa-spinner"></i> -->
                 </div>
-              </div>        
-            </main>
-
+            </div>
+          </div>
+        </main>
     <script src="script2.js"></script>
   </body>
 </html>
+  <main>
+     
+ 
