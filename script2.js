@@ -33,9 +33,9 @@ async function searchOMDb() {
               <div class="main__description">
                  <h3 id="results" style="font-size: 30px;">Search results for: "${item.Title}"</h3>
               </div>
-               <div class="movie-card" style = "margin-top: 32px; display: flex;flex-direction: column;align-items: center;">
+               <div class="movie-card" style = "margin-top: 32px;display:flex;flex-direction: column;align-items: center;">
                   <p class="YearMovie" style = " font-size: 32px;font-weight: bold">${item.Year} — ${item.Type}</p>
-                <img style = " width: 20%;height: 20%;" src="${item.Poster !== "N/A" ? item.Poster: 'https://via.placeholder.com/80'}" alt="Poster" class="imageMovie">
+                <img style = "width:20%; height:20%;" src="${item.Poster !== "N/A" ? item.Poster: 'https://via.placeholder.com/80'}" alt="Poster" class="imageMovie">
                 </div>
             </div>
           </div>  
