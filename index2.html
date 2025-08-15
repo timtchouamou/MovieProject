@@ -73,6 +73,10 @@
         </nav>
 
     <main>
+       <label for="priceRange" style="font-size: 30px; position: absolute; display: flex; left: 900px; bottom: 680px;">Price:
+  <span id="priceValue">$0</span>
+  <input type="range" id="priceRange" min="0" max="1000" step="5" value="0" oninput="updatePriceLabel()">
+  </label>
 
        <!-- results -->
  
@@ -81,10 +85,10 @@
                 <div  >
                   <h3 id="results" style="font-size: 30px;">Search results for:</h3>
                   <!-- Price slider -->
-  <label for="priceRange">Price:
+<!--   <label for="priceRange">Price:
   <span id="priceValue">$0</span>
   <input type="range" id="priceRange" min="0" max="1000" step="5" value="0" oninput="updatePriceLabel()">
-  </label>
+  </label> -->
   </div>
                   <p style="color: rgba(11, 11, 12, 1); font-size: 30px; font-weight: bold;"></p>
                 </div>
