@@ -144,16 +144,17 @@ a.btn-contact {
     transition: all .35s ease;
 }
 
-/* THIS IS FOR THE BUGGER MENU */
+/* THIS IS FOR THE MODAL MENU */
 
 .btn__menu {
   background-color: transparent;
   font-size: 40px;
   text-align: center;
   border: none;
-   color: #0d0c42;
+   color: #7342d6;
    display: none; 
 }
+
 .menu__backdrop {
   border: 2px solid red;
   position: absolute; /* this to make position normal */
@@ -277,9 +278,55 @@ h2 {
   transform: translateY(1px);
 }
 
+.main__description{
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.princeRange{
+  font-size: 23px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  margin-top: 80px;
+}
+
+.movie-card{
+   margin-top: 32px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ 
+}
+
+.YearMovie{
+  font-size: 32px;
+  font-weight: bold
+}
+
+.imageMovie{
+  width: 20%;
+  height: 20%;
+}
+
+ 
+
+ .modal__overlay--loading{ /* To create loading state */
+    /*background-color: blue;*/ /* add this to make it visible and easy to work on it */
+    background-color: #efecec; /* add this after*/
+    font-size: 60px;
+    z-index: -1; /* this hide the loading state */
+    position: absolute;
+    margin-top: 80px;
+  
+ }
+
  .fa-spinner{
     animation: spinner 750ms infinite;
  }
+
     @keyframes spinner {
 
         0%{
@@ -292,6 +339,13 @@ h2 {
 
         }
     }
+
+
+
+ .fa-spinner{
+    animation: spinner 750ms infinite;
+ }
+
 
 
 
