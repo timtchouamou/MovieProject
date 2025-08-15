@@ -38,10 +38,10 @@ async function searchOMDb() {
                 <div>
                   <h3 style="font-size: 23px;">Search results for:"${item.Title}"</h3>
                   <!-- Price slider -->
-  <label for="priceRange" style = "font-size: 23px">Price:
-  <span id="priceValue">$100,0</span>
-  <input type="range" id="priceRange" min="0" max="1000" step="5" value="0" oninput="updatePriceLabel()">
-  </label>
+  // <label for="priceRange" style = "font-size: 23px">Price:
+  // <span id="priceValue">$100,0</span>
+  // <input type="range" id="priceRange" min="0" max="1000" step="5" value="0" oninput="updatePriceLabel()">
+  // </label>
   </div>
                   <p style="color: rgba(11, 11, 12, 1); font-size: 23px; font-weight: bold;">${item.Year} — ${item.Type}</p>
                 </div>
